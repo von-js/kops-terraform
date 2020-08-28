@@ -11,7 +11,7 @@ kops create cluster \
 --master-zones=$(terraform output -json networks | jq -r '.[].availability_zone' | paste -sd, -) \
 --zones=$(terraform output -json networks | jq -r '.[].availability_zone' | paste -sd, -) \
 --subnets=$(terraform output -json subnet_ids | jq -r 'join(",")') \
---node-count=1 \
+--node-count=2 \
 --master-size=t2.micro \
 --node-size=t2.micro \
 --name=${NAME} # --dry-run -o yaml
