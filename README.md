@@ -1,4 +1,5 @@
 # Using Terraform to privision AWS Resources(VPC, S3 etc) and Kops to provision the Kubernetes Cluster
+# This will create a Kubernetes Highly Available cluster all in free tier
 
 ## AWS/KOPS Envirnment setup 
 
